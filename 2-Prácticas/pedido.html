@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link type="text/css" href="./css/style.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/6 copy.png" alt="log">
+        </div>
+        <div>
+            <h1>REPOSTERIA MICHI</h1>
+            <nav>
+                <a href="./index.html">Pasteles</a>
+                <a href="./pedido.html">Pedido</a>
+                <a href="./pastelero.html">Pastelero</a>
+                <div class="animation start-home"></div>
+            </nav>
+        </div>
+    </header>
+    <div id="form">
+        <h2>Pedido</h2>
+        <p>Realiza un cotizacion</p>
+        <div class="container">
+            <form action="">
+                <label for="fnombre">Nombre</label><br>
+                <input type="text" id="fnombre" value="Escribe tu nombre" required> <br><br>
+                <label for="fcorreo">Correo</label><br>
+                <input type="email" id="fcorre" value="Escribe tu correo" required><br><br>
+                <label for="ftipopastel">¿Qué tipo de pastel desea?</label><br>
+                <input list="ftipopastel" required>
+                <datalist id="ftipopastel">
+                    <option value="Boda">
+                    <option value="Bautizo">
+                    <option value="Comunion">
+                    <option value="XV años">
+                    <option value="Graduación">
+                    <option value="Cumpleaños">
+                </datalist><br><br>
+                <label for="fpersonas"> ¿Para cuántas personas?</label><br>
+                <input list="fpersonas" required>
+                <datalist id="fpersonas">
+                    <option value="10">
+                    <option value="20">
+                    <option value="50">
+                    <option value="100">
+                    <option value="20">
+                </datalist><br><br>
+                <label for="fsabor"> ¿Qué sabor desea?</label><br>
+                <input list="fsabor" required>
+                <datalist id="fsabor">
+                    <option value="Naranja">
+                    <option value="Chocolate">
+                    <option value="Zanahoria">
+                    <option value="Guayaba">
+                    <option value="Manzana">
+                    <option value="Fresa">
+                    <option value="Coco">
+                    <option value="Limon">
+                </datalist><br><br>
+                <label for="fdecoracion"> ¿Qué tipo de Decoración?</label><br>
+                <input list="fdecoracion" required>
+                <datalist id="fdecoracion">
+                    <option value="Chantilly">
+                    <option value="Ganache de chocolate">
+                    <option value="Merengue">
+                    <option value="Fondant">
+                    <option value="Royal icing">
+                </datalist><br><br>
+                <label for="ffecha">Fecha de entrega deseada</label><br>
+                <input type="date" id="ffecha" value="2022-03-04" required> <br><br>
+                <label for="fespecificaciones">Especificaciones</label><br>
+                <textarea placeholder="Opcional" rows="10" cols="100"> </textarea><br><br>
+                <input type="submit" value="Enviar" class="boton">
+                <input type="reset" class="boton">
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" colors="primary:#ffafcc,secondary:#a2d2ff" style="width:250px;height:250px">
+            </lord-icon>
+        </div>
+        <div class="fcontainer">
+            <h3>Contacto</h3>
+            <!-- Direeccion -->
+            <p>Insurgentes 123456 CDMX</p>
+            <!-- Numero -->
+            <p>5554535251</p>
+            <p><span>Horario</span> de lunes a viernes 8:00 - 20:00 y sabado a domingo 10:00 - 16:00</p>
+        </div>
+    </footer>
+</body>
+
+</html>
