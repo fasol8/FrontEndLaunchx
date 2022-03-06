@@ -106,13 +106,9 @@ h3 {
 }
 
 #pasteles .container {
+    display: flex;
     background-color: #ffc8dd;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.pastel {
-    display: flex;
+    justify-content: center;
 }
 
 #pasteles .carta {
@@ -355,6 +351,3 @@ tbody:hover tr:hover td {
     color: #444;
     text-shadow: 0 1px 0 #fff;
 }
-
-
-/* Footer */
