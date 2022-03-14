@@ -31,8 +31,11 @@ header {
 .overlay__content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #6f7d94;
     text-decoration: none;
+}
+
+.a__links {
+    color: #6f7d94;
 }
 
 .nav__links li {
@@ -58,6 +61,21 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+.cta__2 {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #2c4cca;
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: 50px;
+    width: 150px;
 }
 
 .cta:hover {
@@ -88,11 +106,28 @@ header {
     justify-content: center;
 }
 
+.feature__right__1 {
+    grid-column-start: 8;
+    grid-column-end: span 5;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(70deg, #089ae6, #2970dd);
+}
+
+.feature__right__2 {
+    grid-column-start: 8;
+    grid-column-end: span 5;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff, #3d63db);
+}
+
 .feature__left2 {
     grid-column-start: 3;
     grid-column-end: span 5;
     display: flex;
     justify-content: center;
+    background: linear-gradient(to bottom, #ffffff, #3d63db);
 }
 
 .feature__right2 {
@@ -105,7 +140,6 @@ header {
     font-size: 36px;
     font-weight: 700;
     color: #1f3e72;
-    margin-bottom: var(--space20);
 }
 
 .feature__text {
@@ -113,14 +147,54 @@ header {
     color: #6f7d94;
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: var(--space20);
+}
+
+.feature__text__1 {
+    font-family: "Lora", serif;
+    color: #274577;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.feature__text__2 {
+    font-family: "Lora", serif;
+    color: #1f3e72;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.feature__table {
+    position: absolute;
+    width: 800px;
+    border: 1px solid snow;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.feature__table label {
+    color: #6f7d94;
+    font-size: 18px;
+}
+
+.feature__table input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: 20px;
+}
+
+.table__input {
+    color: #1f3e72;
 }
 
 .feature__img {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     padding: 70px;
+    margin-left: 80px;
 }
 
 .form-inline {
@@ -151,6 +225,17 @@ header {
     text-align: left;
     transition: all 0.25s;
     padding: 20px;
+}
+
+.section__3div {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.feature__3div {
+    max-width: 500px;
 }
 
 .card__img {}
@@ -189,9 +274,7 @@ details[open] {
     box-shadow: 5px 5px 15px #d9d9d9;
 }
 
-details[open] {
-    background: #ffffff;
-}
+details[open] {}
 
 details[open] summary {
     font-weight: 600;
@@ -199,7 +282,7 @@ details[open] summary {
 
 details summary::before {
     position: absolute;
-    content: "▼";
+    content: "";
     font-size: 1.75rem;
     top: 10px;
     right: 16px;
@@ -256,6 +339,10 @@ footer {
 .f-body {
     display: flex;
     justify-content: space-between;
+}
+
+.f-body p {
+    font-size: 18px;
 }
 
 .colum1 {
