@@ -238,12 +238,6 @@ header {
     max-width: 500px;
 }
 
-.card__img {}
-
-.card__header {}
-
-.card__text {}
-
 details {
     background-color: #f6f8fa;
     width: 100%;
@@ -318,6 +312,238 @@ details[open] summary::before {
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/covid-still-life-with-vaccine.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #C7C7C7;
+    -webkit-text-stroke: 2px black;
+}
+
+.hero .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #2c4cca;
+}
+
+.buster__hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/Vaccine-red.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.buster__hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #2c4cca;
+    -webkit-text-stroke: 2px black;
+}
+
+.buster__hero .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #2c4cca;
+}
+
+.main__edu {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main__edu h2 {
+    color: #2c4cca;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* REGULATION */
+
+.main__regulation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shape__container {
+    position: relative;
+    height: 550px;
+    width: 400px;
+}
+
+.shape {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #2c4cca;
+    width: 400px;
+    height: 550px;
+    border-radius: 30px;
+    transform: skewX(-5deg) skewY(-5deg);
+    /*Shorthand: skew(-5deg, -5deg);*/
+    box-shadow: 0px 5px 14px rgba(9, 33, 58, 0.1);
+}
+
+.customer__picture {
+    height: 50%;
+}
+
+.customer__picture img {
+    height: 100%;
+    transform: skewX(5deg) skewY(5deg) scale(1.15);
+    /*Shorthand: skew(5deg, 5deg) scale(1.15);*/
+}
+
+.text {
+    font-family: "Hind", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #f4f4f4;
+    padding: 40px 30px;
+    transform: skewX(5deg) skewY(5deg);
+    /*Shorthand: skew(5deg, 5deg);*/
+}
+
+.shape__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f7ff;
+    width: 400px;
+    height: 550px;
+    border-radius: 30px;
+    transform: skewX(-5deg) skewY(-5deg) rotate(-20deg);
+    /*Shorthand: skew(-5deg, -5deg) rotate(-20deg);*/
+    z-index: -10;
+}
+
+
+/* NEWS */
+
+.body__new {
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 40px;
+}
+
+main__new {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+.text--medium {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+
+.cards__new {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+}
+
+.card__new {
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #2c4cca;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.card__new:hover {
+    transform: translateY(-7px);
+}
+
+.card__image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+}
+
+.card__info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.card__price {
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: #303032;
+    border-radius: 20px;
 }
 
 
