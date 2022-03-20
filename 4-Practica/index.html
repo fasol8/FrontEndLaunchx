@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./utils/style.css">
+</head>
+
+<body id="body">
+    <header>
+        <img src="https://img.icons8.com/color/96/000000/pokeball-2.png" />
+        <a class="logo">Pokedex</a>
+        <nav>
+            <img src="https://img.icons8.com/office/80/000000/pokedex.png" />
+            <input type="text" placeholder="Nombre o Número" id="pokeName" name="pokeName">
+            <button onclick="fetchData()">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="busqueda" height="50px" width="50px"/>
+            </button>
+            <button onclick="init()">
+                <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-random-interface-kiranshastry-solid-kiranshastry.png" alt="aleatorio" height="50px" width="50px"/>
+            </button>
+        </nav>
+    </header>
+    <main class="flex"></main>
+    <div class="card__container">
+        <div class="pokemon__container">
+            <div class="pokemon__snap" align="center">
+                <img src="" id="img">
+            </div>
+            <div class="poke__card">
+                <div class="name">
+                    <h1 id="name">Nombre</h1>
+                    <div class="number">
+                        <h2 id="number" class="number">Número</h2>
+                    </div>
+                </div>
+                <div class="card__info">
+                    <div class="card__info__poke">
+                        <p>Type</p>
+                        <h3 id="type"></h3>
+                    </div>
+                    <div class="card__info__poke">
+                        <p>Weight</p>
+                        <h3 id="weight">peso</h3>
+                    </div>
+                    <div class="card__info__poke">
+                        <p>Height</p>
+                        <h3 id="height">altura</h3>
+                    </div>
+                    <div class="card__info__poke">
+                        <p>Skills</p>
+                        <h3 id="abilities">habilidades</h3>
+
+                    </div>
+                </div>
+                <div class="card__stats">
+                    <div class="card__title_stats">
+                        <p>HP</p>
+                        <p>Attack</p>
+                        <p>Defense</p>
+                        <p>Special attack</p>
+                        <p>Special Defense</p>
+                        <p>Speed</p>
+                    </div>
+                    <div class="stats">
+                        <div class="progress">
+                            <div class="progress__hp" data="200">
+                                <h3 id="hp">100</h3>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__attack" data="200">
+                                <h3 id="attack">100</h3>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__defense" data="200">
+                                <h3 id="defense">100</h3>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__sattack" data="200">
+                                <h3 id="sattack">100</h3>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__sdefense" data="200">
+                                <h3 id="sdefense">100</h3>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__speed" data="200">
+                                <h3 id="speed">100</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer align="center">
+    <a class="footer" href="https://pokeapi.co">pokeApi</a>
+    <script src="./utils/index.js"></script>
+</footer>
+
+</html>

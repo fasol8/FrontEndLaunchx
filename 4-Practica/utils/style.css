@@ -1,0 +1,413 @@
+:root {
+    --dragon: #53a4cf;
+    --dragon-light: #f16e57;
+    --bug: #729f3e;
+    --bug-light: #b0d189;
+    --fairy: #FB74D2;
+    --fairy-light: #FA89D8;
+    --fire: #FD7D24;
+    --fire-light: #FEA05D;
+    --ghost: #7a61a3;
+    --ghost-light: #A898C3;
+    --earth: #f7dd3f;
+    --earth-light: #ab9841;
+    --normal: #A4ACAF;
+    --normal-light: #C9CECF;
+    --psychic: #F366B9;
+    --psychic-light: #F7A1D3;
+    --steel: #9EB7B9;
+    --steel-light: #C4D3D4;
+    --dark: #545454;
+    --dark-light: #666666;
+    --electric: #EDD535;
+    --electric-light: #F5E78E;
+    --fight: #d46722;
+    --fight-light: #e8a073;
+    --flyer: #3dc7ee;
+    --flyer-light: #bebab8;
+    --plant: #9BCB50;
+    --plant-light: #B8D981;
+    --ice: #52C3E7;
+    --ice-light: #93DBF0;
+    --poison: #B97FC8;
+    --poison-light: #D8B8E0;
+    --rock: #a38c21;
+    --rock-light: #D9BE45;
+    --water: #4592c3;
+    --water-light: #84B7D7;
+    --main-color: #fafafa;
+    --main-color-light: #000000;
+}
+
+.fire {
+    --main-color: var(--fire);
+    --main-color-light: var(--fire-light)
+}
+
+.dragon {
+    --main-color: var(--dragon);
+    --main-color-light: var(--dragon-light);
+}
+
+.bug {
+    --main-color: var(--bug);
+    --main-color-light: var(--bug-light);
+}
+
+.fairy {
+    --main-color: var(--fairy);
+    --main-color-light: var(--fairy-light);
+}
+
+.ghost {
+    --main-color: var(--ghost);
+    --main-color-light: var(--ghost-light);
+}
+
+.ground {
+    --main-color: var(--earth);
+    --main-color-light: var(--earth-light);
+}
+
+.normal {
+    --main-color: var(--normal);
+    --main-color-light: var(--normal-light);
+}
+
+.psychic {
+    --main-color: var(--psychic);
+    --main-color-light: var(--psychic-light);
+}
+
+.steel {
+    --main-color: var(--steel);
+    --main-color-light: var(--steel-light);
+}
+
+.dark {
+    --main-color: var(--dark);
+    --main-color-light: var(--dark-light);
+}
+
+.electric {
+    --main-color: var(--electric);
+    --main-color-light: var(--electric-light);
+}
+
+.fighting {
+    --main-color: var(--fight);
+    --main-color-light: var(--fight-light);
+}
+
+.flying {
+    --main-color: var(--flyer);
+    --main-color-light: var(--flyer-light);
+}
+
+.grass {
+    --main-color: var(--plant);
+    --main-color-light: var(--plant-light);
+}
+
+.ice {
+    --main-color: var(--ice);
+    --main-color-light: var(--ice-light);
+}
+
+.poison {
+    --main-color: var(--poison);
+    --main-color-light: var(--poison-light);
+}
+
+.rock {
+    --main-color: var(--rock);
+    --main-color-light: var(--rock-light);
+}
+
+.water {
+    --main-color: var(--water);
+    --main-color-light: var(--water-light);
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    background: linear-gradient(to top, var(--main-color-light), var(--main-color));
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    margin-right: auto;
+    color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    -webkit-text-stroke: 3px #3050ce;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: auto;
+    height: 50px;
+    width: 220px;
+    background-color: transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+button {
+    margin: 5px;
+    padding: auto;
+    background-color: var(--main-color-light);
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    align-content: center;
+}
+
+button:hover {
+    background-color: var(--main-color);
+}
+
+.card__container {
+    width: 600px;
+    margin: auto;
+}
+
+.pokemon__container {
+    position: relative;
+    width: 100%;
+}
+
+.pokemon__snap {
+    position: relative;
+    width: 300px;
+    top: 35px;
+    left: 25%;
+    z-index: 3;
+}
+
+.pokemon__snap img {
+    width: 200px;
+    height: 200px;
+    margin-top: calc(-48px - 5px);
+}
+
+.poke__card {
+    position: relative;
+    width: 65%;
+    min-height: 400px;
+    margin: 15px auto;
+    padding: 25px 15px;
+    color: #000000;
+    background: #f2f2f2;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.name {
+    text-align: center;
+}
+
+.name h1 {
+    margin-top: 40px;
+    color: var(--main-color);
+}
+
+.number {
+    position: relative;
+    margin: 15px 0 0;
+    font-weight: 600;
+}
+
+.card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.card__info__poke {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card__info__poke p {
+    letter-spacing: 1px;
+    font-size: small;
+    font-weight: lighter;
+    color: var(--main-color);
+}
+
+.card__info__poke {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 200;
+    border-right: 2px solid var(--main-color);
+}
+
+.card__info__poke:last-child {
+    border-right: none;
+}
+
+.card__stats {
+    display: flex;
+    margin: 10px;
+    border-top: 2px solid var(--main-color);
+}
+
+.card__title_stats {
+    margin-right: 15px;
+    color: #000000;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.card__title_stats p {
+    height: 30px;
+}
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
+    height: 30px;
+    width: 300px;
+}
+
+.progress__hp {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.progress__attack {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.progress__defense {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.progress__sattack {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.progress__sdefense {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.progress__speed {
+    background: linear-gradient(to left, var(--main-color), var(--main-color-light));
+    box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 1;
+    transition: 1s ease 0.3s;
+}
+
+.footer {
+    margin: auto;
+    background-color: transparent;
+    width: 100%;
+    color: var(--main-color);
+    position: relative;
+}
+
+.footer:link {
+    text-decoration: none;
+}
+
+.footer:hover {
+    text-decoration: underline;
+}
